@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spice Fusion — Product</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<script async src="https://js.stripe.com/v3/buy-button.js"></script>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <span class="brand">Spice Fusion</span>
+      <nav class="nav">
+         <a href="#contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO (reduced height) -->
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-inner">
+        <div class="hero-text">
+          <h1>TASTE THE THRILL. PLAY WITH FIRE</h1>
+          <p>Handcrafted hot sauces & pepper challenge kit — bold flavors, unforgettable heat.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCT SECTION (image left, details right) -->
+    <section id="catalog" class="section products">
+      <div class="container product-section-container">
+        <div id="product-section" class="product-section">
+          <!-- Left: Gallery -->
+          <div class="product-gallery" id="product-gallery">
+            <div class="main-image-wrap">
+              <button id="gallery-prev" class="gallery-nav-inline" aria-label="Previous image">&larr;</button>
+              <img id="gallery-main" src="" alt="Product image" />
+              <button id="gallery-next" class="gallery-nav-inline" aria-label="Next image">&rarr;</button>
+            </div>
+            
+          </div>
+
+          <!-- Right: Product info -->
+          <div class="product-info" id="product-info">
+            <h2 id="product-title">Product title</h2>
+            <p id="product-desc" class="muted">Product description</p>
+            <div class="price-row">
+              <div class="price" id="product-price">$0.00</div>
+              <div class="stock muted" id="product-stock"></div>
+            </div>
+            <div id="stripe-buy-button-container">
+              <stripe-buy-button
+                buy-button-id="buy_btn_1SV2AuIhb4LCqsu6gHdawlHP"
+                publishable-key="pk_live_51RbVRiIhb4LCqsu6aZIVEgXzNk7TEhxOhl6L4UMDR2ghVpuRKqySjuo2r7cTZE7Z8L8WvZP96J0dkST8VwAwhQe800SB21nQbJ"
+              >
+  </stripe-buy-button>
+</div>
+
+
+            <div class="muted" style="margin-top:12px;">We offer free shipping for all your purchases.</div>
+          </div>
+        </div> <!-- product-section -->
+      </div> <!-- container -->
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <p>Email: <a href="mailto:sales@hotspicefusion.com">sales@hotspicefusion.com</a></p>
+      </div>
+      <div class="container">
+      <p>© 2025 Spice Fusion</p>
+    </div>
+    </section>
+  </main>
+
+  <!-- PRODUCT MODAL (optional, opens from gallery) -->
+ <div id="product-modal" class="modal hidden" aria-hidden="true">
+  <div class="modal-content">
+    <button id="modal-close" class="modal-close-btn">&times;</button>
+    <div class="modal-inner">
+      <button id="modal-prev" class="modal-nav">&larr;</button>
+      <img id="modal-image" src="" alt="Product image" />
+      <button id="modal-next" class="modal-nav">&rarr;</button>
+    </div>
+  </div>
+</div>
+
+
+  <!-- config must load before script.js -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

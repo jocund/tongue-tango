@@ -13,7 +13,7 @@ const products = [
     id: "tongue-tango",
     title: "Tongue Tango Hot Sauce Pepper Challenge Kit",
     description: "8 Levels of heat with Carolina Reaper, Ghost, Habanero, Cayenne, Datil, Scotch Bonnet & Scorpion Peppers — Ultimate game night, party game and unique gift.",
-    price: 44.99,
+    price: 54.99,
     images: [
       "assets/tongue-tango-1.png",
       "assets/tongue-tango-2.jpg",

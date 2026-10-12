@@ -6,7 +6,6 @@
   <title>Spice Fusion — Product</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
-<script async src="https://js.stripe.com/v3/buy-button.js"></script>
 <body>
   <header class="site-header">
     <div class="header-inner">
@@ -51,15 +50,7 @@
               <div class="price" id="product-price">$0.00</div>
               <div class="stock muted" id="product-stock"></div>
             </div>
-            <div id="stripe-buy-button-container">
-              <stripe-buy-button
-                buy-button-id="buy_btn_1SV2AuIhb4LCqsu6gHdawlHP"
-                publishable-key="pk_live_51RbVRiIhb4LCqsu6aZIVEgXzNk7TEhxOhl6L4UMDR2ghVpuRKqySjuo2r7cTZE7Z8L8WvZP96J0dkST8VwAwhQe800SB21nQbJ"
-              >
-  </stripe-buy-button>
-</div>
-
-
+            <button id="buy-now" class="btn primary">Buy now</button>
             <div class="muted" style="margin-top:12px;">We offer free shipping for all your purchases.</div>
           </div>
         </div> <!-- product-section -->
